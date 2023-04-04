@@ -1,0 +1,174 @@
+html {
+    background-color: #efebe4;
+}
+
+body {
+    color: #2C1F1B;
+    font-weight: 400;
+    max-width: 100%;
+    font-family: 'Cabin', sans-serif;
+
+    height: 207vh;
+        /* to auto allign stuff, however this does fuck with the arrangement of the header and the image/text  */
+    /* display: flex; */
+    justify-content: center;
+    min-height: 100vh;
+    background: #efebe4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.textAndImage{
+    align-items: center;   
+}
+
+.headerTwo{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: block;
+    background-color: #97403E;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.innerHeader{
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #97403E;
+}
+
+.myName{
+    height: 100%;
+    display: table;
+    float: left;
+
+}
+
+.myName h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #efebe4;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+        /* to give space between the text and the right */
+    /* padding: 0px 20px; */
+
+}
+
+/* .navigation a :last-child{
+    padding-right: 0;
+} */
+
+.navigation li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #efebe4;
+    font-size: 20px;
+    font-weight: 400;
+
+
+}
+
+
+
+.header{
+    font-family: 'Cabin', sans-serif;
+    color: #efebe4;
+    font-size: 20px;
+    padding: 10px;
+    background: #97403E;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 40px;
+}
+
+.headerText{
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    /* margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 100px; */
+    
+}
+
+.homeText{
+    /* float: right; */
+    text-align: left;
+    margin-top: -40px;
+    margin-right: 5px;
+}
+
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+}
+
+img {
+    width: 600px;
+    height: 304px;
+        /* edit the lower text out in order to have image be on top of the text  */
+    float: left;
+    border: 3px solid transparent;
+        /* to make the image round below  */
+    /* border-radius: 10px; */
+    margin-right: 15px;
+
+}
+
+.textBox{
+    color: #2C1F1B;
+    max-height: 304px;
+    
+}
+
+.textBox h2{
+    font-size: 40px;
+}
+
+.textBox p{
+    font-size: 16px;
+}
+
+.textBox h3{
+    /* margin-bottom: 10px; */
+    padding: 10px;
+}
+
+.italicText{
+    font-family: 'Cabin', sans-serif;
+    font-style: italic;
+}
+
+p{
+    padding: 5px;
+}

@@ -1,0 +1,333 @@
+html {
+    background-color: #49a6cb;
+}
+
+@font-face{
+    font-family: myFont;
+    src:url(OhnoSoftieDemoBold.otf);
+}
+
+ body {
+    color: white;
+ }
+
+
+
+
+/* body {
+    background-image: url("Images/backgroundImageRainbow.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 100vh;
+} */
+
+
+
+.container {
+  background-image: url("Images/backgroundImageRainbow.png");
+  background-size: 100% auto%; /* or 100vw 100vh */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* if you can't figure out how to make image take up entire page then activate border radius  */
+  border-radius: 15px;
+}
+
+/* header code below  */
+        html {
+            background-color: #49a6cb;
+        }
+
+        * {
+            text-decoration: none;
+        }
+
+        .headerTwo{
+            width: 100%;
+            float: center;
+            margin: 0 auto;
+            height: 60px;
+            padding:15px 0px 15px;
+            display: block;
+            /* background-color: blue; */
+
+            z-index: 1;
+            position: fixed;
+            display: flex;
+            top: 0;
+            left: 0;
+        }
+
+        .innerHeader{
+            width: 95%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            /* background-color: red; */
+
+            /* outline border code below  */
+                outline-color: rgb(255, 255, 255);
+                outline-width: 2px;
+                outline-style: dashed;
+                border-radius: 10px;
+        }
+
+        .myName{
+            height: 100%;
+            display: table;
+            float: left;
+            margin-left: 20px;
+
+        }
+
+        .myName h1{
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+            font-family: 'Cabin', sans-serif;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .navigation{
+
+            margin: 0;
+            float: right;
+            height: 100%;
+        }
+
+        .navigation a{
+            height: 100%;
+            display: table;
+            float: left;
+                /* to give space between the text and the right */
+            padding: 0px 20px;
+        }
+
+        .navigation a li{
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            /* color: #efebe4; */
+            color: white;
+            font-family: 'Cabin', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+
+        }
+
+        .navigation a li:hover{
+            text-decoration: underline;
+            text-decoration-color: white;
+
+        }
+/* end of header code  */
+
+
+
+/* "smile" logo code below  */
+
+    .smile{
+        text-align: center;
+        font-family: myFont;
+        font-size: 150px;
+        padding: 185px 0px 180px;
+        transition: .3s ease;
+    }  
+
+    h1 {
+        color: #ffffff;
+        margin: 0 auto;
+        height: 162px;
+    }
+
+    h1 span{
+        display: inline-flex;
+    }
+
+    .smile h1 span{
+
+        transition: .3s ease;
+        max-width: 700px;
+
+    }
+
+    .smile h1 span:hover{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+    }
+
+    .singleTooth{
+        width: 160px;
+        height: 160px;
+        margin-top: 0px;
+        transition: .3s ease;
+        max-width: 700px;
+    }
+
+    .singleTooth:hover{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+    }
+/* smile header code end  */
+
+/* cheese prompt code below  */
+
+    hr {
+        max-width: 340px;
+        border-top: 2px dashed red;
+    }
+
+    .textBox{
+        width: 25%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0px 10px;
+        /* background-color: red; */
+
+        /* outline border code below  */
+            outline-color: rgb(255, 255, 255);
+            outline-width: 2px;
+            outline-style: dashed;
+            border-radius: 10px;
+    }
+
+    .text{
+        /* font-size: 23px; */
+        padding: 100px 0px 100px;
+    }
+
+    .subheading{
+        text-align: center;
+        height: 60px;
+        padding: 0px 0px 10px;
+        color: white;
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .cheeseWords:hover {
+        cursor: grab;
+    }
+
+    .cheeseWords{
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+     
+        /*
+          Introduced in Internet Explorer 10.
+          See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+        */
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+/* cheese prompt code end  */
+
+
+
+/* code for the images and the image grid below */
+
+    .main {
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        margin-left: -15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px, 300px));
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+
+    @media screen and (min-width: 992px) {
+    .main {
+    grid-template-columns: repeat(3, minmax(300px, 300px));
+    }
+    }
+    
+    img {
+    width: 330px;
+    height: 167px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    }
+    
+    img:hover {
+    background: url("Images /test2.png") no-repeat;
+    }
+    
+    .firstLayer{
+    position: absolute;
+    transition: opacity .2s ease;
+    }
+    
+    .firstLayer:hover {
+    opacity: 0%;
+    transition: opacity .5s ease;
+    }
+    
+    .secondLayer{
+    position: absolute;
+    z-index: -1;
+    }
+    
+    .box {
+    width: 330px;
+    height: 167px;
+    object-fit: cover;
+    object-position: center;
+    }
+
+/* code for the images and image grid end  */
+
+.popup {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+.popup{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+   .popup img {
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  } 
+
+.divImage{
+    margin-left: -20px;
+}

@@ -1,0 +1,89 @@
+html {
+    background-color: #efebe4;
+}
+
+body {
+    color: #2C1F1B;
+    font-weight: 400;
+    height: 207vh;
+    max-width: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.header{
+    font-family: 'Cabin', sans-serif;
+    color: #efebe4;
+    font-size: 20px;
+    padding: 10px;
+    background: #97403E;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* margin-top: -90px;
+    margin-left: -10px; */
+    z-index: 1;
+
+    height: 40px;
+}
+
+.headerText{
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    /* margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 100px; */
+    
+}
+
+.nameContent{
+    color: #2C1F1B;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 100px;
+    margin-left: 40px;
+
+}
+
+.textContent{
+    color: #2C1F1B;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 70px;
+    margin-left: 40px;
+
+}
+
+    .nameAge{
+        font-size: 50px;
+        height: 20px;
+
+    }
+
+    .date {
+        
+    }
+
+    .interview {
+
+    }
+
+    .italicText{
+        font-family: 'Cabin', sans-serif;
+        font-style: italic;
+
+    }
+
+.picture{
+    /* margin-left: 100px;
+    margin-top: -200px; */
+    float: right;
+    align-items: right;
+}
+
+.box {
+        width: 330px;
+        height: 167px;
+        object-fit: cover;
+        object-position: center;  
+}

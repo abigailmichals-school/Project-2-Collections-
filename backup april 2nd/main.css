@@ -1,0 +1,144 @@
+html {
+    background-color: #efebe4;
+}
+
+body {
+    color: #2C1F1B;
+    font-weight: 400;
+    height: 207vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+
+.header{
+    font-family: 'Cabin', sans-serif;
+    color: #efebe4;
+    font-size: 20px;
+    padding: 10px;
+    background: #97403E;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 40px;
+}
+
+.headerText{
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    
+}
+
+
+.smile{
+    text-align: center;
+    font-family: 'Leckerli One', cursive;
+    font-size: 68px;
+    margin-bottom: -40px;
+}
+
+.text{
+    font-size: 23px;
+}
+
+.cheeseWords{
+    width: 100px;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.cheeseWords:hover {
+    cursor: grab;
+}
+
+h1 {
+    color: #97403E;
+}
+
+hr {
+    max-width: 340px;
+    border-top: 2px solid;
+}
+
+.subheading{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    height: 60px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+.smileQuestion{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+
+/* .pictures{
+    margin-top: 30px;
+} */
+
+.main {
+    position: relative;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-top: 5vh; */
+    width: 100%;
+    margin-left: -15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 300px));
+    column-gap: 40px;
+    row-gap: 10px;
+}
+
+
+img {
+    width: 330px;
+    height: 167px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+
+}
+
+a{
+    width: 330px;
+    height: 167px;
+}
+
+img:hover {
+    background: url("Images /test2.png") no-repeat;
+}
+
+.firstLayer{
+    position: absolute;
+    transition: opacity .2s ease;
+    /* top: 0; */
+    /* left: 0; */
+}
+
+.firstLayer:hover {
+    opacity: 0%;
+    transition: opacity .5s ease;
+}
+
+.secondLayer{
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: -1;
+}
+
+.box {
+    width: 330px;
+    height: 167px;
+    object-fit: cover;
+    object-position: center;
+
+}
